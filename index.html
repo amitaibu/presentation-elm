@@ -54,7 +54,7 @@
 
 			<section>
 				<h2>Elm</h2>
-				<small>Why I'm Learning It</small>
+				<small>A different approach to webapps</small>
 
       </section>
 
@@ -199,7 +199,46 @@ view address model =
 				</code></pre>
       </section>
 
-			
+			<section>
+        <h2>Example 2 - Pair of Counters</h2>
+				<div>
+				  <img src="https://cloud.githubusercontent.com/assets/125707/9739890/8ac8da08-565a-11e5-877b-bf4f1d9fd472.jpg"
+				</div>
+      </section>
+
+			<section>
+				<h2>Compiling</h2>
+				<small>Wrong data type</small>
+				<pre><code data-trim>
+type alias Model = String
+				</code></pre>
+
+			</section>
+
+			<section>
+				<pre><code data-trim>
+Detected errors in 1 module.
+## ERRORS in ././Counter.elm ###################################################
+
+-- TYPE MISMATCH ----------------------------------------------- ././Counter.elm
+
+The type annotation for `update` does not match its definition.
+
+17| update : Action -> Model -> Model
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+As I infer the type of values flowing through your program, I see a conflict
+between these two types:
+
+    String
+
+    number
+
+
+				</code></pre>
+
+			</section>
+
+			<!-- End of slides -->
 
 			</div>
 
